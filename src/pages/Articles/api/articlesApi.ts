@@ -12,7 +12,6 @@ const articlesRtkApi = rtkApi.injectEndpoints({
 						_limit: limit,
 					},
 				}),
-
 			})
 		});
 	}

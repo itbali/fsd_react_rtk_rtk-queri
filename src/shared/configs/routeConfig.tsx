@@ -1,5 +1,6 @@
 import {RouteProps} from 'react-router-dom';
 import {ArticleDetailsPage, Articles} from 'src/pages/';
+import {Home} from 'src/pages/Home/ui/Home';
 
 export enum RouteNames {
 	MAIN = 'main',
@@ -21,7 +22,7 @@ export const RoutePath: Record<RouteNames, string> = {
 export const routeConfig: Record<RouteNames, RouteProps> = {
 	[RouteNames.MAIN]: {
 		path: RoutePath.main,
-		element: <div>MAIN</div>
+		element: <Home/>
 	},
 	[RouteNames.ABOUT]: {
 		path: RoutePath.about,

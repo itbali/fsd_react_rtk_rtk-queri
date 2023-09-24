@@ -1,7 +1,6 @@
 import {Space, Spin} from 'antd';
 import {SpaceSize} from 'antd/es/space';
 import {SpinSize} from 'antd/es/spin';
-import * as React from 'react';
 
 export const Spinner = (props: SpinnerProps) => {
 	const {tip, size="default"} = props
@@ -14,7 +13,7 @@ export const Spinner = (props: SpinnerProps) => {
 
 	return (
 		<Space size={spinToSpaceSizeMapper[size]}>
-			<Spin tip={tip} size={size} />
+			<Spin size={size} >{tip}</Spin>
 		</Space>
 	)
 }
